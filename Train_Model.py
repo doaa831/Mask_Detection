@@ -101,3 +101,6 @@ plt.legend()
 plt.show()
 plt.savefig('AccVal_acc')
 
+
+if __name__ == "__main__":
+
