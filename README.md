@@ -18,7 +18,7 @@ The photos used were actual photos of faces wearing masks. Pictures were collect
   - [x] Kaggle datasets
   - [x] RMFD dataset[(See here)](https://github.com/X-zhangyang/Real-World-Masked-Face-Dataset)
   
-  # How to Use
+# How to Use
 To use this project on your system, follow these steps:
 
 1- Clone this repository onto your system by typing the following command on your Command Prompt:
