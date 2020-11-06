@@ -13,6 +13,6 @@ This dataset consists of 3835 images that fall into two categories:
 
 The photos used were actual photos of faces wearing masks. Pictures were collected from the following sources:
 
-  [] Bing Search API [(See Python script)](https://github.com/chandrikadeb7/Face-Mask-Detection/blob/master/search.py)
-  [] Kaggle datasets
-  [] RMFD dataset[(See here)](https://github.com/X-zhangyang/Real-World-Masked-Face-Dataset)
+  - [x] Bing Search API [(See Python script)](https://github.com/chandrikadeb7/Face-Mask-Detection/blob/master/search.py)
+  - [x] Kaggle datasets
+  - [x] RMFD dataset[(See here)](https://github.com/X-zhangyang/Real-World-Masked-Face-Dataset)
