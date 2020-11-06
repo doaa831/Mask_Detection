@@ -91,3 +91,7 @@ different from the data set used for training, it may be necessary to use more l
 - When selecting hyperparameters, it is important to impart learning to use a low learning rate to take
 advantage of ready-made model weights. This selection as an optimizer option (SGD, Adam, RMSprop)
 will affect the number of durations required to successfully obtain a trained model.
+
+# Examples
+![grab-landing-page](https://github.com/dodo295/Mask_Detection/blob/main/Output1.png)
+![grab-landing-page](https://github.com/dodo295/Mask_Detection/blob/main/Output2.png)
