@@ -8,9 +8,9 @@ The dataset used can be downloaded here - [Click to Download ](https://drive.goo
 
 This dataset consists of 3835 images that fall into two categories:
 
-  - [.] with_mask: 1916 images
+  - with_mask: 1916 images
    
-  - [.] without_mask: 1919 images
+  - without_mask: 1919 images
 
 The photos used were actual photos of faces wearing masks. Pictures were collected from the following sources:
 
