@@ -31,6 +31,7 @@ been calibrated to make predictions. In this case we're using weights from Image
    
     input_tensor = input (format = (224, 224, 3))
     base_model = ResNet50 (include_top = False, weights = 'imagenet', input_tensor = input_tensor)
+    
 - The starting point is very helpful since we have weights already used to classify images but since we're using
   them in a completely new dataset, adjustments are needed. Our goal is to build a model that has high accuracy
   in its classification. This indicates how you will use previously trained layers of a model.
@@ -47,7 +48,7 @@ been calibrated to make predictions. In this case we're using weights from Image
   Using only **GlobalAveragePool2D layer, dense layer with relu and dense layer with softmax**,
   we can perform form closing and start the classification procedure.
 
-- [y] **Optimization methods**: We tested it with RMSprop. RMSprop with 100 epochs to obtain the result.
+- [x] **Optimization methods**: We tested it with RMSprop. RMSprop with 100 epochs to obtain the result.
 
 # How to Use
 To use this project on your system, follow these steps:
