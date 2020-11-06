@@ -24,14 +24,15 @@ The face mask detector did not use any masking image data set. The model is accu
 it is also computationally efficient and thus makes it easy to deploy the model to embedded systems.
 
 - **ResNet50** is a pre-trained Keras model with the feature of letting you use weights that have already
-been calibrated to make predictions. In this case we're using weights from Imagenet and the network is ResNet50.
+  been calibrated to make predictions. In this case we're using weights from Imagenet and the network is ResNet50.
       
-    Include_top = False 
- allows you to extract features by removing the last dense layers. This allows us to control form output and input.
+      Include_top = False 
+      
+  allows you to extract features by removing the last dense layers. This allows us to control form output and input.
    
-    input_tensor = input (format = (224, 224, 3))
-    base_model = ResNet50 (include_top = False, weights = 'imagenet', input_tensor = input_tensor)
-    
+      input_tensor = input (format = (224, 224, 3))
+      base_model = ResNet50 (include_top = False, weights = 'imagenet', input_tensor = input_tensor) 
+      
 - The starting point is very helpful since we have weights already used to classify images but since we're using
   them in a completely new dataset, adjustments are needed. Our goal is to build a model that has high accuracy
   in its classification. This indicates how you will use previously trained layers of a model.
@@ -43,6 +44,7 @@ been calibrated to make predictions. In this case we're using weights from Image
   
       For the layer in base_model.layers:
          layer.trainable = false   
+         
 - Later on, we need to link our previously tested pattern with the new layers of our model.
   We used the **GlobalAveragePooling2D** layer to link the dimensions of the previous layers to the new layers.
   Using only **GlobalAveragePool2D layer, dense layer with relu and dense layer with softmax**,
