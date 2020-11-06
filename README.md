@@ -49,6 +49,8 @@ it is also computationally efficient and thus makes it easy to deploy the model 
   We used the **GlobalAveragePooling2D** layer to link the dimensions of the previous layers to the new layers.
   Using only **GlobalAveragePool2D layer, dense layer with relu and dense layer with softmax**,
   we can perform form closing and start the classification procedure.
+  
+  **You can download Our Model from here:[(Click here)](https://drive.google.com/file/d/1VdBF9ZC6WGJ6dfSiH3rOEMzDFhaMf4pb/view?usp=sharing)**
 
 - [x] **Optimization methods**: We tested it with RMSprop. RMSprop with 100 epochs to obtain the result.
 
