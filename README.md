@@ -48,7 +48,7 @@ it is also computationally efficient and thus makes it easy to deploy the model 
       For the layer in base_model.layers:
          layer.trainable = false   
          
-- Later on, we need to link our previously tested pattern with the new layers of our model.
+- Later on, we need to link our previously trained-layers with the new layers of our model.
   We used the **GlobalAveragePooling2D** layer to link the dimensions of the previous layers to the new layers.
   Using only **GlobalAveragePool2D layer, dense layer with relu and dense layer with softmax**,
   we can perform form closing and start the classification procedure.
