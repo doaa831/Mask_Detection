@@ -105,3 +105,5 @@ will affect the number of durations required to successfully obtain a trained mo
 # Examples
 ![grab-landing-page](https://github.com/dodo295/Mask_Detection/blob/main/Output1.png)
 ![grab-landing-page](https://github.com/dodo295/Mask_Detection/blob/main/Output2.png)
+![grab-landing-page](https://github.com/dodo295/Mask_Detection/blob/main/Output3.png)
+![grab-landing-page](https://github.com/dodo295/Mask_Detection/blob/main/Output4.png)
