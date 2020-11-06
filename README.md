@@ -1,7 +1,10 @@
 # Mask_Detection
-The Face Mask Detection System relies on the concepts of Computer vision and Deep learning
-using OpenCV and Tensorflow / Keras in order to detect face masks in still images
-as well as in real-time video streams.
+The Face Mask Detection System relies on the concepts of Computer vision and Deep learning using 
+OpenCV and Tensorflow / Keras in order to detect face masks in still images as well as in real-time
+video streams. So this system can be used in real-time applications that require face mask detection 
+for safety purposes due to the Covid-19 virus outbreak. This project can be combined with integrated
+systems for application in airports, railway stations, offices, schools and public places to ensure
+that public safety guidelines are followed.
 
 # Dataset
 The dataset used can be downloaded here - [Click to Download ](https://drive.google.com/file/d/1NxxBwcPipK28TwKlpVKZSRXkvO-Twi_V/view?usp=sharing)
