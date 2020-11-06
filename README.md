@@ -78,3 +78,15 @@ Replace 'library-name' by the name of the library to be downloaded.
 
     python Mask_Detection_Webcam.py 
    
+# Results
+- We got **100% accuracy in the training set** and **99.74% verification set** with 100 epochs.
+
+
+- Debate over the use of freezing continues in the previously tested model.
+It reduces calculation time, reduces overuse but reduces accuracy.When the new data set is very
+different from the data set used for training, it may be necessary to use more layers for modification.
+
+
+- When selecting hyperparameters, it is important to impart learning to use a low learning rate to take
+advantage of ready-made model weights. This selection as an optimizer option (SGD, Adam, RMSprop)
+will affect the number of durations required to successfully obtain a trained model.
