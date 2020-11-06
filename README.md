@@ -3,7 +3,7 @@ The Face Mask Detection System relies on the concepts of Computer vision and Dee
 using OpenCV and Tensorflow / Keras in order to detect face masks in still images
 as well as in real-time video streams.
 
-# :point_right: Dataset
+# Dataset
 The dataset used can be downloaded here - [Click to Download ](https://drive.google.com/file/d/1NxxBwcPipK28TwKlpVKZSRXkvO-Twi_V/view?usp=sharing)
 
 This dataset consists of 3835 images that fall into two categories:
