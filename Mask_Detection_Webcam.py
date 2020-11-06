@@ -59,5 +59,4 @@ def Mask_Camera():
 #%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 if __name__ == "__main__":
-    # construct the argument parser and parse the arguments
 	Mask_Camera()
