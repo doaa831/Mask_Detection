@@ -17,7 +17,37 @@ The photos used were actual photos of faces wearing masks. Pictures were collect
   - [x] Bing Search API [(See Python script)](https://github.com/chandrikadeb7/Face-Mask-Detection/blob/master/search.py)
   - [x] Kaggle datasets
   - [x] RMFD dataset[(See here)](https://github.com/X-zhangyang/Real-World-Masked-Face-Dataset)
-  
+
+# Model 
+The face mask detector did not use any masking image data set. The model is accurate, and since we used the
+**ResNet50 Architecture** without layers categorized as the primary model for feature extraction from images,
+it is also computationally efficient and thus makes it easy to deploy the model to embedded systems.
+
+**ResNet50** is a pre-trained Keras model with the feature of letting you use weights that have already
+been calibrated to make predictions. In this case we're using weights from Imagenet and the network is ResNet50.
+      
+    Include_top = False 
+ allows you to extract features by removing the last dense layers. This allows us to control form output and input.
+   
+    input_tensor = input (format = (224, 224, 3))
+    base_model = ResNet50 (include_top = False, weights = 'imagenet', input_tensor = input_tensor)
+The starting point is very helpful since we have weights already used to classify images but since we're using
+them in a completely new dataset, adjustments are needed. Our goal is to build a model that has high accuracy
+in its classification. This indicates how you will use previously trained layers of a model.
+We already have too many parameters due to the number of ResNet50 layers but we have calibration weights.
+We can choose to **freeze** these layers (as much as you can) so that these values do not change,
+this way saving time and computational cost.
+In this case, we are "freezing" all ResNet50 layers. The way to do this in Keras is by using:
+
+    For the layer in base_model.layers:
+       layer.trainable = false
+Later on, we need to link our previously tested pattern with the new layers of our model.
+We used the **GlobalAveragePooling2D** layer to link the dimensions of the previous layers to the new layers.
+Using only **GlobalAveragePool2D layer, dense layer with relu and dense layer with softmax**,
+we can perform form closing and start the classification procedure.
+
+**Optimization methods**: We tested it with RMSprop. RMSprop with 100 epochs to obtain the result.
+
 # How to Use
 To use this project on your system, follow these steps:
 
