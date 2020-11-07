@@ -119,11 +119,11 @@ I performed face detection using [this project](https://github.com/sthanhng/yolo
 You must download the pre-trained YOLOv3 weights file trained on [WIDER FACE: A Face Detection Benchmark](http://shuoyang1213.me/WIDERFACE/)
 dataset from this [link](https://drive.google.com/file/d/1xYasjU52whXMLT5MtF7RCPQkV66993oR/view) and place it in the project directory.
 
-![grab-landing-page](https://github.com/dodo295/Mask_Detection/blob/main/samples/2.jpg)
-![grab-landing-page](https://github.com/dodo295/Mask_Detection/blob/main/samples/3.jpg)
+![grab-landing-page](https://github.com/dodo295/Mask_Detection/blob/main/YOLOv3_Outputs/2.jpg)
+![grab-landing-page](https://github.com/dodo295/Mask_Detection/blob/main/YOLOv3_Outputs/3.jpg)
 
-![grab-landing-page](https://github.com/dodo295/Mask_Detection/blob/main/samples/8.jpg)
-![grab-landing-page](https://github.com/dodo295/Mask_Detection/blob/main/samples/5.jpg)
+![grab-landing-page](https://github.com/dodo295/Mask_Detection/blob/main/YOLOv3_Outputs/8.jpg)
+![grab-landing-page](https://github.com/dodo295/Mask_Detection/blob/main/YOLOv3_Outputs/5.jpg)
 
-![grab-landing-page](https://github.com/dodo295/Mask_Detection/blob/main/samples/4.jpg)
-![grab-landing-page](https://github.com/dodo295/Mask_Detection/blob/main/samples/9.jpg)
+![grab-landing-page](https://github.com/dodo295/Mask_Detection/blob/main/YOLOv3_Outputs/4.jpg)
+![grab-landing-page](https://github.com/dodo295/Mask_Detection/blob/main/YOLOv3_Outputs/9.jpg)
