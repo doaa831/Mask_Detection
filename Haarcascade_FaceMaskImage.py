@@ -43,6 +43,7 @@ def Mask_Image(image_path):
     ax.imshow(cv2.cvtColor(image_with_detections, cv2.COLOR_BGR2RGB))
     ax.savefig('Detected_Image')	
     cv2.waitKey(0)
+	
     
 #%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
