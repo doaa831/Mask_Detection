@@ -90,8 +90,7 @@ Replace 'library-name' by the name of the library to be downloaded.
 # Results
 - I got **100% accuracy in the training set** and **99.74% verification set** with 100 epochs.
 
-![grab-landing-page](https://github.com/dodo295/Mask_Detection/blob/main/Accuracy%20plot.png)
-![grab-landing-page](https://github.com/dodo295/Mask_Detection/blob/main/Loss%20plot.png)
+![grab-landing-page](https://github.com/dodo295/Mask_Detection/blob/main/Accuracy%20plot.png)![grab-landing-page](https://github.com/dodo295/Mask_Detection/blob/main/Loss%20plot.png)
 
 
 - Debate over the use of freezing continues in the previously tested model.
