@@ -22,40 +22,39 @@ The photos used were actual photos of faces wearing masks. Pictures were collect
   - [x] RMFD dataset[(See here)](https://github.com/X-zhangyang/Real-World-Masked-Face-Dataset)
 
 # Model 
-The face mask detector did not use any masking image data set. The model is accurate, and since we used the
-**ResNet50 Architecture** without layers categorized as the primary model for feature extraction from images,
-it is also computationally efficient and thus makes it easy to deploy the model to embedded systems.
+The face mask detector did not use any masking image data set. The model is accurate, and since I used
+**ResNet50 Architecture** without layers classified as the base model for extracting features from the images,
+It is also computationally efficient and thus makes it easy to deploy the model to embedded systems.
 
-- **ResNet50** is a pre-trained Keras model with the feature of letting you use weights that have already
-  been calibrated to make predictions. In this case we're using weights from Imagenet and the network is ResNet50.
+- **ResNet50** is a pre-trained Keras model with the feature of letting you use weights that are already
+    calibrated to make predictions. In this case, I'm using weights from Imagenet and the network is ResNet50.
       
       Include_top = False 
       
-  allows you to extract features by removing the last dense layers. This allows us to control form output and input.
+    It allows you to extract features by removing the last dense layers. This allows me to control form output and input.
    
       input_tensor = input (format = (224, 224, 3))
       base_model = ResNet50 (include_top = False, weights = 'imagenet', input_tensor = input_tensor) 
       
-- The starting point is very helpful since we have weights already used to classify images but since we're using
-  them in a completely new dataset, adjustments are needed. Our goal is to build a model that has high accuracy
-  in its classification. This indicates how you will use previously trained layers of a model.
-  We already have too many parameters due to the number of ResNet50 layers but we have calibration weights.
+- The starting point is very useful since i already have weights used to classify images but since
+  I'm using them in a brand new dataset, adjustments are needed. My goal is to build a model with high accuracy
+  in its rating. This indicates how to use previously trained model layers. I actually have several parameters
+  due to the number of ResNet50 layers but we have calibration weights.
 
-- We can choose to **freeze** these layers (as much as you can) so that these values do not change,
-  this way saving time and computational cost.
-  In this case, we are "freezing" all ResNet50 layers. The way to do this in Keras is by using:
+- I choose **freeze** these layers (as much as I can) so these values don't change, this way saving time and computational cost.
+  In this case, I am **freezing** all ResNet50 layers. The way to do this in Keras is by using:
   
       For the layer in base_model.layers:
          layer.trainable = false   
          
-- Later on, we need to link our previously trained-layers with the new layers of our model.
-  We used the **GlobalAveragePooling2D** layer to link the dimensions of the previous layers to the new layers.
-  Using only **GlobalAveragePool2D layer, dense layer with relu and dense layer with softmax**,
-  we can perform form closing and start the classification procedure.
+- Later on, I needed to link the previously trained layers with the new layers for the model.
+  I used the **GlobalAveragePooling2D** layer to link the dimensions of the previous layers to the new layers.
+  Using only **GlobalAveragePool2D layer, dense layer with relu layer and dense layer with softmax**,
+  I can perform closing the form and start the classification procedure.
   
-- [x] **Optimization methods**: We tested it with 100 epochs using **RMSprop** to obtain the result.
+- [x] **Optimization Methods**: I tested this over 100 epochs using** RMSprop** to get the result.
 
-- [x] **You can download Our Model from here:[(Click here)](https://drive.google.com/file/d/1VdBF9ZC6WGJ6dfSiH3rOEMzDFhaMf4pb/view?usp=sharing)**
+- [x] **You can download my model here: [(click here)] (https://drive.google.com/file/d/1VdBF9ZC6WGJ6dfSiH3rOEMzDFhaMf4pb/view?usp=sharing)**
 
 
 # How to Use
@@ -89,7 +88,7 @@ Replace 'library-name' by the name of the library to be downloaded.
     python Mask_Detection_Webcam.py 
    
 # Results
-- We got **100% accuracy in the training set** and **99.74% verification set** with 100 epochs.
+- I got **100% accuracy in the training set** and **99.74% verification set** with 100 epochs.
 ![grab-landing-page](https://github.com/dodo295/Mask_Detection/blob/main/train_Acc.png)
 ![grab-landing-page](https://github.com/dodo295/Mask_Detection/blob/main/train_loss.png)
 
