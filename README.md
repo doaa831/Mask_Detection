@@ -106,14 +106,16 @@ will affect the number of durations required to successfully obtain a trained mo
 The first step in implement my model is face detection in an image or frame of a video stream
 and there are a lot of techniques that can be used in face detection. Here I used two of these techniques
 - haarcascde deep learning algorithm
+
 ![grab-landing-page](https://github.com/dodo295/Mask_Detection/blob/main/Output1.png)
 ![grab-landing-page](https://github.com/dodo295/Mask_Detection/blob/main/Output2.png)
 
 ![grab-landing-page](https://github.com/dodo295/Mask_Detection/blob/main/Output3.png)
 ![grab-landing-page](https://github.com/dodo295/Mask_Detection/blob/main/Output4.png)
+
 - YOLOv3 algorithm
 I performed face detection using [this project](https://github.com/sthanhng/yoloface) as my guide, so thank you very much.
 YOLOv3 (You Only Look Once) is a modern, real-time object detection algorithm.
 You must download the pre-trained YOLOv3 weights file trained on [WIDER FACE: A Face Detection Benchmark](http://shuoyang1213.me/WIDERFACE/)
-dataset from this[link](https://drive.google.com/file/d/1xYasjU52whXMLT5MtF7RCPQkV66993oR/view) and place it in the project directory.
+dataset from this [link](https://drive.google.com/file/d/1xYasjU52whXMLT5MtF7RCPQkV66993oR/view) and place it in the project directory.
 
