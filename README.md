@@ -75,11 +75,11 @@ followed by:
 
 Replace 'library-name' by the name of the library to be downloaded.
 
-- [x] **For face detction using Haarcascade Algorithm**   
-   - **Train your Model** by typing the following commands on your Command Prompt:
+  
+ 3- **Train your Model** by typing the following commands on your Command Prompt:
       
          python loader.py Train_Model.py
-    
+ - [x] **For face detction using Haarcascade Algorithm**   
    - Run Haarcascade_FaceMaskImage.py by typing the following command on your Command Prompt:
     
          python Mask_Detection_Image.py --image Your_test.jpg
