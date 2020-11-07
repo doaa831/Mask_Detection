@@ -74,18 +74,29 @@ followed by:
     pip install 'library name'
 
 Replace 'library-name' by the name of the library to be downloaded.
-    
-3- **Train your Model** by typing the following commands on your Command Prompt:
-      
-    python loader.py Train_Model.py
-    
-4- Run Haarcascade_FaceMaskImage.py by typing the following command on your Command Prompt:
-    
-    python Mask_Detection_Image.py --image Your_test.jpg
-    
-5- To open your webcam and discover if there is a mask or not! Writing:
 
-    python Haarcascade_FaceMaskWebcam.py 
+- [x] **For face detction using Haarcascade Algorithm**   
+   - **Train your Model** by typing the following commands on your Command Prompt:
+      
+         python loader.py Train_Model.py
+    
+   - Run Haarcascade_FaceMaskImage.py by typing the following command on your Command Prompt:
+    
+         python Mask_Detection_Image.py --image Your_test.jpg
+    
+    - To open your webcam and discover if there is a mask or not! Writing:
+
+          python Haarcascade_FaceMaskWebcam.py 
+ - [x] **For face detction using YOLOv3 Algorithm**         
+   - image input
+
+         python YOLOFaceMask.py --image samples/1.jpg --output-dir outputs/
+   - video input
+
+         python YOLOFaceMask.py --video samples/your_video.mp4 --output-dir outputs/
+   - webcam
+
+         python yYOLOFaceMask.py --src 0 --output-dir outputs/ 
    
 # Results
 - I got **100% accuracy in the training set** and **99.74% verification set** with 100 epochs.
