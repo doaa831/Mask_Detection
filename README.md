@@ -79,13 +79,13 @@ Replace 'library-name' by the name of the library to be downloaded.
       
     python loader.py Train_Model.py
     
-4- Run Mask_Detection_Image.py by typing the following command on your Command Prompt:
+4- Run Haarcascade_FaceMaskImage.py by typing the following command on your Command Prompt:
     
     python Mask_Detection_Image.py --image Your_test.jpg
     
 5- To open your webcam and discover if there is a mask or not! Writing:
 
-    python Mask_Detection_Webcam.py 
+    python Haarcascade_FaceMaskWebcam.py 
    
 # Results
 - I got **100% accuracy in the training set** and **99.74% verification set** with 100 epochs.
@@ -107,12 +107,11 @@ The first step in implement my model is face detection in an image or frame of a
 and there are a lot of techniques that can be used in face detection. Here I used two of these techniques
 - **haarcascde deep learning algorithm**
 
-![grab-landing-page](https://github.com/dodo295/Mask_Detection/blob/main/Output1.png)
-![grab-landing-page](https://github.com/dodo295/Mask_Detection/blob/main/Output2.png)
+![grab-landing-page](https://github.com/dodo295/Mask_Detection/blob/main/haarcascade_Outputs/Output1.png)
+![grab-landing-page](https://github.com/dodo295/Mask_Detection/blob/main/haarcascade_Outputs/Output2.png)
 
-![grab-landing-page](https://github.com/dodo295/Mask_Detection/blob/main/Output3.png)
-![grab-landing-page](https://github.com/dodo295/Mask_Detection/blob/main/Output4.png)
-
+![grab-landing-page](https://github.com/dodo295/Mask_Detection/blob/main/haarcascade_Outputs/Output3.png)
+![grab-landing-page](https://github.com/dodo295/Mask_Detection/blob/main/haarcascade_Outputs/Output4.png)
 - **YOLOv3 algorithm**
 I performed face detection using [this project](https://github.com/sthanhng/yoloface) as my guide, so thank you very much.
 
