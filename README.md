@@ -116,8 +116,8 @@ and there are a lot of techniques that can be used in face detection. Here I use
 I performed face detection using [this project](https://github.com/sthanhng/yoloface) as my guide, so thank you very much.
 
 **YOLOv3**(You Only Look Once) is a modern, real-time object detection algorithm.
-You must download the pre-trained YOLOv3 weights file trained on [WIDER FACE: A Face Detection Benchmark](http://shuoyang1213.me/WIDERFACE/)
-dataset from this [link](https://drive.google.com/file/d/1xYasjU52whXMLT5MtF7RCPQkV66993oR/view) and place it in the project directory.
+  You must download the pre-trained YOLOv3 weights file trained on [WIDER FACE: A Face Detection Benchmark](http://shuoyang1213.me/WIDERFACE/)
+  dataset from this [link](https://drive.google.com/file/d/1xYasjU52whXMLT5MtF7RCPQkV66993oR/view) and place it in the project directory.
 
 ![grab-landing-page](https://github.com/dodo295/Mask_Detection/blob/main/YOLOv3_Outputs/2_yoloface.jpg)
 ![grab-landing-page](https://github.com/dodo295/Mask_Detection/blob/main/YOLOv3_Outputs/3_yoloface.jpg)
