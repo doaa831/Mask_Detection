@@ -52,9 +52,9 @@ It is also computationally efficient and thus makes it easy to deploy the model 
   Using only **GlobalAveragePool2D layer, dense layer with relu layer and dense layer with softmax**,
   I can perform closing the form and start the classification procedure.
   
-- [x] **Optimization Methods**: I tested this over 100 epochs using** RMSprop** to get the result.
+- [x] **Optimization Methods**: I tested this over 100 epochs using **RMSprop** to get the result.
 
-- [x] **You can download my model here: [(click here)] (https://drive.google.com/file/d/1VdBF9ZC6WGJ6dfSiH3rOEMzDFhaMf4pb/view?usp=sharing)**
+- [x] **You can download my model here:[(click here)](https://drive.google.com/file/d/1VdBF9ZC6WGJ6dfSiH3rOEMzDFhaMf4pb/view?usp=sharing)**
 
 
 # How to Use
