@@ -92,6 +92,7 @@ Replace 'library-name' by the name of the library to be downloaded.
 ![grab-landing-page](https://github.com/dodo295/Mask_Detection/blob/main/train_Acc.png)
 ![grab-landing-page](https://github.com/dodo295/Mask_Detection/blob/main/train_loss.png)
 
+
 - Debate over the use of freezing continues in the previously tested model.
 It reduces calculation time, reduces overuse but reduces accuracy.When the new data set is very
 different from the data set used for training, it may be necessary to use more layers for modification.
